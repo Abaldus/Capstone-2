@@ -1,26 +1,40 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import Home from './homepage';
+import Menu from './menu';
+import Heroes from './businessheroes';
+import Dominos from './domonios';
+import Oreo from './oreo';
+import Coke from './coke';
+import Education from './education';
+import Cpr from './cpr';
+import Jack from './jackdaniels';
+
+import {
+  Route,
+  Switch, 
+  BrowserRouter
+} from "react-router-dom";
 import './App.css';
 
-function App() {
+class App extends Component {
+  render() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <BrowserRouter>
+      <div className="App">
+        <Menu/>
+      <Switch>
+        <Route exact path="/" component={ Home } />
+        <Route exact path="/education" component={ Education } />
+        <Route exact path="/cpr" component={ Cpr } />
+        <Route exact path="/businessheroes" component={ Heroes } />
+        <Route exact path="/businessheroes/dominos" component={ Dominos } />
+        <Route exact path="/businessheroes/coke" component={ Coke } />
+        <Route exact path="/businessheroes/oreo" component={ Oreo } />
+        <Route exact path="/businessheroes/jackdaniels" component={ Jack } />
+      </Switch>
+      </div>
+      </BrowserRouter>
+  )};
 }
 
 export default App;
