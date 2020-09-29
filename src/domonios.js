@@ -4,8 +4,6 @@ import "./dominos.css";
 export default function Dominos() {
   return (
     <div className="Dominos">
-       <h1>Dominos</h1>
-       <h2 style={{ color: 'white'}}>Hello World</h2>
 
        {/* this is the start of the code =======================================*/}
 
