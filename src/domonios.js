@@ -1,8 +1,8 @@
 import React from 'react';
 import "./dominos.css";
 
-import trexTarget from './assets/trex-image/trex';
-import trexModel from './assets/scenegltf';
+import trexTarget from './assets/trex-image/trex.fset';
+import trexModel from './assets/scene.gltf';
 
 export default function Dominos() {
   return (
