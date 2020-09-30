@@ -1,6 +1,9 @@
 import React from 'react';
 import "./dominos.css";
 
+import trexTarget from './assets/trex-image/trex';
+import trexModel from './assets/scenegltf';
+
 export default function Dominos() {
   return (
     <div className="Dominos">
@@ -47,10 +50,10 @@ export default function Dominos() {
 
             {/*  <!-- use rawgithack to retrieve the correct url for nft marker (see 'pinball' below) --> */}
             <a-nft
-                type='nft' url='%PUBLIC_URL%/trex-image/trex'
+                type='nft' url={trexTarget}
                 smooth='true' smoothCount='10' smoothTolerance='0.01' smoothThreshold='5'>
                 <a-entity
-                    gltf-model='%PUBLIC_URL%/scene.gltf'
+                    gltf-model={trexModel}
                     scale="5 5 5"
                     position="50 150 -100"
                     >
