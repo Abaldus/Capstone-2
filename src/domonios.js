@@ -47,10 +47,10 @@ export default function Dominos() {
 
             {/*  <!-- use rawgithack to retrieve the correct url for nft marker (see 'pinball' below) --> */}
             <a-nft
-                type='nft' url='https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/trex-image/trex'
+                type='nft' url='%PUBLIC_URL%/trex-image/trex'
                 smooth='true' smoothCount='10' smoothTolerance='0.01' smoothThreshold='5'>
                 <a-entity
-                    gltf-model='https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf'
+                    gltf-model='%PUBLIC_URL%/scene.gltf'
                     scale="5 5 5"
                     position="50 150 -100"
                     >
