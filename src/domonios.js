@@ -40,7 +40,7 @@ export default function Dominos() {
 
         {/* <body style='margin : 0px; overflow: hidden;'> */}
         {/* <!-- minimal loader shown until image descriptors are loaded --> */}
-        <div class="arjs-loader">
+        {/* <div class="arjs-loader">
           <div>Loading, please wait...</div>
         </div>
         <a-scene
@@ -48,7 +48,7 @@ export default function Dominos() {
             renderer="logarithmicDepthBuffer: true;"
             embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'>
 
-            {/*  <!-- use rawgithack to retrieve the correct url for nft marker (see 'pinball' below) --> */}
+           
             <a-nft
                 type='nft' url={trexTarget}
                 smooth='true' smoothCount='10' smoothTolerance='0.01' smoothThreshold='5'>
@@ -60,7 +60,7 @@ export default function Dominos() {
                 </a-entity>
             </a-nft>
         <a-entity camera></a-entity>
-        </a-scene>
+        </a-scene> */}
 
 
 

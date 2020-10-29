@@ -1,28 +1,23 @@
-.Heroes {
-    /* margin-top: 50vh; */
-        /* The image used */
-        background-image: url(./assets/businessherobg.jpg);
-    
-        /* Full height */
-        min-height: 100vh; 
-        min-width: 100vw;
-    
-        /* Center and scale the image nicely */
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-size: 100%vw 100%vh;
-
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        padding-top: 5vh;
-        padding-bottom: 15vh;
-}
-
+/* body {
+  background: linear-gradient(to bottom, #010c5b 0%, #adadb8 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 2000px;
+  background-attachment: scroll;
+} */
 h1 {
     font-size: 70px;
   background: -webkit-linear-gradient(#eee, #333);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.Heroes {
+  overflow: scroll;
+}
+/* @media screen and (max-width:480px){
+  
+  .Heroes-root-1 {
+    width: 60px !important;
+    height: 60px !important;
+  }
+} */

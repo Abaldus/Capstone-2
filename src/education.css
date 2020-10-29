@@ -1,0 +1,15 @@
+body {
+    /* margin-top: 50vh; */
+        /* The image used */
+
+    
+        /* Full height */
+        min-height: 100vh; 
+        min-width: 100vw;
+        overflow: visible;
+    
+}
+
+.education{
+    padding-top: 30vh;
+}
